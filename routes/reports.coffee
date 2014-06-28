@@ -18,3 +18,12 @@ router.route("/")
     res.render 'reports/index',
       reports: reports,
       busqueda: req.query.busqueda
+
+
+router.route("/new")
+.post (req, res) ->
+  new Revision(req.body).save (err, rev) ->
+    if err
+      return res.send 500, err
+
+    return res.json rev
