@@ -9,3 +9,9 @@ config.development =
   db: "mongodb://localhost/tracsa-dev"
   env: 'development'
   root: root
+
+config.production =
+  port: 5000
+  db: "mongodb://localhost/tracsa-production"
+  env: 'production'
+  root: root
