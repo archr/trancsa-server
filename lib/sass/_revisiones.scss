@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+}
+
+.revisiones {
+  .subtitle {
+    text-align: center;
+  }
+
+  .table-container {
+    background: white;
+    padding: 5px 10px;
+    margin-top: 10px;
+  }
+  .table-container {
+    max-height: 65%;
+    overflow-y: scroll;
+  }
+
+  .count {
+    padding: 3px;
+  }
+}

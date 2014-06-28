@@ -1,0 +1,41 @@
+include ../layout
+
+block content
+  .container.revisiones
+    h2.subtitle Mantenimiento
+    .row
+      .box-4.box-offset-8
+        form(action="/", method="GET")
+          .input-group
+            input.form-control(placeholder="Buscar por nombre o usuario", name="busqueda", value=busqueda)
+            span.input-group-btn
+              button.btn.btn-default(type="button") Buscar
+    .row
+      .table-container
+        table#table.table.table-striped
+          thead
+            tr
+              th Fecha
+              th  Equipo
+              th Usuario
+              th Horas
+              th Tipo
+              th Detalles
+
+          tbody
+            each report in reports
+              tr
+                td= report.fecha
+                td= report.maquina
+                td= report.usuario
+                td= report.horasMaquina
+                td= report.tipo
+                td= report.notas
+      p.count #{reports.length} mantenimientos encontrados
+
+
+
+
+
+append javascript
+  script.

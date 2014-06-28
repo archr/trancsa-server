@@ -1,0 +1,17 @@
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(http-equiv='Content-type', content='text/html;charset=UTF-8')
+
+    //if lt IE 9
+      script(src='http://html5shim.googlecode.com/svn/trunk/html5.js')
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    block stylesheets
+      include ./_stylesheets
+  body
+    include ./_navbar
+    block content
+
+    block javascript
+      include ./_javascript

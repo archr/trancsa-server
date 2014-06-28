@@ -1,0 +1,78 @@
+$small: "(min-width: #{$screen-sm-min}) and (max-width: #{$screen-sm-max})";
+$medium: "(min-width: #{$screen-md})";
+$large: "(min-width: #{$screen-lg})";
+
+.box-2{@include make-md-column(2);}
+.box-3{@include make-md-column(3);}
+.box-4{@include make-md-column(4);}
+.box-6{@include make-md-column(6);}
+.box-8{@include make-md-column(8);}
+.box-9{@include make-md-column(9);}
+.box-10{@include make-md-column(10);}
+.box-12{@include make-md-column(12);}
+
+.box-offset-8{@include make-md-column-offset(8);}
+
+.box-2-12 {
+  @include make-md-column(2);
+  @media #{$small} {
+    @include make-sm-column(12);
+  }
+}
+
+.box-3-12 {
+  @include make-md-column(3);
+  @media #{$small} {
+    @include make-sm-column(12);
+  }
+}
+
+.box-4-12 {
+  @include make-md-column(4);
+  @media #{$small} {
+    @include make-sm-column(12);
+  }
+}
+
+.box-6-12 {
+  @include make-md-column(6);
+  @media #{$small} {
+    @include make-sm-column(12);
+  }
+}
+
+.box-8-12 {
+  @include make-md-column(8);
+  @media #{$small} {
+    @include make-sm-column(12);
+  }
+}
+
+.box-9-12 {
+  @include make-md-column(9);
+  @media #{$small} {
+    @include make-sm-column(12);
+  }
+}
+
+.box-10-12 {
+  @include make-md-column(10);
+  @media #{$small} {
+    @include make-sm-column(12);
+  }
+}
+
+
+.box-3-6 {
+  @include make-md-column(3);
+  @media #{$small} {
+    @include make-sm-column(6);
+  }
+}
+
+.box-6-6 {
+  @include make-md-column(6);
+  @media #{$small} {
+    @include make-sm-column(6);
+  }
+}
